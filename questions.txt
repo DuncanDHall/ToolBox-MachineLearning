@@ -1,0 +1,19 @@
+1. What is the general trend in the curve?
+    It seems that the training percentage increases test accuracy with almost a 1:1 
+    correlation.
+
+2. Are there parts of the curve that appear to be noisier than others?  Why?
+    The lower side of the curve seems to be more noisy, where there is a relatively
+    small set of examples which control the "learning experience", if you will, and
+    if these examples are biased at all, then that bias negatively influences
+    learning.
+
+3. How many trials do you need to get a smooth curve?
+    The correlation was exhibited clearly at 50 trials, though increasing trials from
+    there still had significant smoothing effects (I ran up to 300 trials per test
+    percentage)
+
+4. Try different values for C (by changing LogisticRegression(C=10**-10)).  What happens?  
+    That's pretty cool! It appears that the value for C detirmines how hard the 
+    program thinks about it's examples, and how much time it puts in outside of
+    class exploring and doing the "going beyond" challenges.
